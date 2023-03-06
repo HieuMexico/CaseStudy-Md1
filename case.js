@@ -65,6 +65,9 @@ function saveProduct() {
     } if (name == null || name == '') {
         alert('Hãy nhập tên của sản phẩm');
         return;
+    } if (price == null || price == '') {
+        alert('Hãy nhập giá của sản phẩm');
+        return;
     } if (price <= 0) {
         alert('giá không được âm')
         return;
@@ -143,6 +146,27 @@ function updateProduct() {
     let price = Number(document.getElementById("price").value);
     let volume = Number(document.getElementById("volume").value);
     let id = document.getElementById("productId").value;
+
+        if (avatar == null || avatar == '') {
+        alert('Hãy dán link ảnh sản phẩm.');
+        return;
+    } if (name == null || name == '') {
+        alert('Hãy nhập tên của sản phẩm');
+        return;
+    } if (price == null || price == '') {
+        alert('Hãy nhập giá của sản phẩm');
+        return;
+    } 
+    if (price <= 0) {
+        alert('giá không được âm')
+        return;
+    } if (price >= 9999999) {
+        alert('giá không được lớn hơn 10.000.000($)')
+        return;
+    } if (volume == null || volume == '') {
+        alert('Hãy nhập thể tích của sản phẩm');
+        return;
+    }
 
     let currentProduct = products.find(function (product) {
         return product.id == id;
