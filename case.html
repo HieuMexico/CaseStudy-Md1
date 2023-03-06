@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cửa Hàng Nước Hoa Cao Cấp</title>
+        <link rel="stylesheet" href="case.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" href="images/H1.jpg">
+    </head>
+
+    <body style="background-color: rgb(90, 85, 85);">
+        <!--Tiêu đề-->
+        <header>
+            <div class="nav container" style="padding: 0px;">
+                <img src="images/H.jpg" alt="" style="width: 100px; margin-left: -150px;  ">
+                <a href="#" class="logo" style="margin-left: -260px;">𝐇𝐢𝐞𝐮𝐌𝐞𝐱𝐢𝐜𝐨 𝐒𝐭𝐨𝐫𝐞</a>
+
+                <div>
+                    <a href="" style="margin: 25px;">HOME</a>
+                    <a href="" style="margin: 25px;">Introduce</a>
+                    <a href="" style="margin: 25px;">BLOG</a>
+                    <a href="" style="margin: 25px;">PRODUCTS</a>
+                </div>
+                <div style="margin-right: -190px;">
+                    <a href="https://www.facebook.com/IamHieuMexico75/">
+                        <i class='bx bxl-facebook-square' id="cart-icon" style="margin: 5px; color: black;"></i>
+                    </a>
+                    <a href="https://www.instagram.com/hieumexico175/">
+                        <i class='bx bxl-instagram-alt' id="cart-icon" style="margin: 5px; color: black;"></i>
+                    </a>
+                    <i class='bx bxs-shopping-bag' id="cart-icon" style="margin: 5px;"></i>
+                    <i class='bx bxs-user-circle' id="cart-icon" style="margin: 50px;"></i>
+
+                </div>
+
+                <!--Giỏ hàng-->
+                <div class="cart">
+                    <h2 class="cart-title">Giỏ hàng của bạn</h2>
+                    <!--Nội dung-->
+                    <div class="cart-content">
+                        <div class="cart-box">
+                            <img src="images/4.jpg" alt="" class="cart-img">
+                            <div class="detail-box">
+                                <div class="cart-product-title">Dubai Perfume</div>
+                                <div class="cart-price">$500</div>
+                                <input type="number" value="1" class="cart-quantity">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <div class="row">
+            <div class="create-manage" style=" padding-left: 140px; padding-top:40px;">
+                <h2 class="heading-2">Product</h2>
+                <div class="create-area" style="width: 1200px;">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="avatar">Avatar URL</label>
+                            <input class="form-control" type="url" id="avatar">
+                            <input type="hidden" id="productId" value="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input class="form-control" type="text" id="name">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="inventory">Price</label>
+                            <input class="form-control" type="number" id="price">
+                        </div>
+                        <div class="form-group">
+                            <label for="money">Volume</label>
+                            <input class="form-control" type="number" id="volume">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" style="padding-left: 523px;">
+                    <button id="btnCreate" onclick="saveProduct()" class="btn btn-dark">Create</button>
+                    <button id="btnUpdate" onclick="updateProduct()" class="btn btn-danger d-none">Save</button>
+                    <button onclick="resetForm()" class="btn btn-warning">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: rgb(200, 204, 207);">
+            <!--Cửa hàng-->
+            <section class="shop container">
+                <h2 class="section-title">Các Sản Phẩm Đang Hot Hiện Nay</h2>
+                <!--Nội dung-->
+                <div class="shop-content" id="shop-content">
+
+                </div>
+            </section>
+        </div>
+
+        <div class="row">
+            <div class="paging-area" style="padding-left: 690px; margin-top: -90px; padding-bottom: 150px;">
+                <ul id="pagination">
+                </ul>
+            </div>
+            <div style="padding-left: 50px;margin-top: -150px;">
+                <h3>Địa chỉ : 86 Lê Lợi, Thành Phố Huế</h3>
+                <h3>Email : HieuMexico75@gmail.com</h3>
+                <h3>Thời gian làm việc
+                    Thứ 2 - Thứ 7 : 08Am -19PM
+                </h3>
+                <h3>Số điện thoại : 0768226886</h3>
+            </div>
+        </div>
+
+        <script src="case.js"></script>
+    </body>
+
+</html>
